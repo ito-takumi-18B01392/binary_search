@@ -19,13 +19,13 @@ int main(){
     scanf("%d", &A[i]);
   }
     lb = 0;
-    ub = A[n-1];
+    ub = 1000000000;
     while(ub-lb>1){
         int m = (ub+lb)/2;
         if(p(m)) {ub = m;}
         else {lb = m;}
     }
     
-    printf("%d¥n", ub);
+    printf("%d\n", ub);
   return 0;
 }

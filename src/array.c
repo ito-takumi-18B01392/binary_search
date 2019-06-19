@@ -19,6 +19,6 @@ int main(){
       else lb = m;
   }
 
-    printf("%d¥n", ub);
+    printf("%d\n", ub);
   return 0;
 }
