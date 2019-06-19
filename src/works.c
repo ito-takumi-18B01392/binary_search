@@ -13,8 +13,7 @@ int p(int x){
     {sum = sum + A[i];
          if (A[i] > x) return 0;
          else if (sum > x) {ct = ct+1; sum = A[i];}
-    }if (ct >= k) return 0;
-     else return 1;
+    } return ct < k;
 }
 
 int main(){
@@ -24,7 +23,7 @@ int main(){
         scanf("%d", &A[i]);
     }
     lb = 0;
-    ub = 10000;
+    ub = 10001;
     while(ub-lb>1){
         int m = (ub+lb)/2;
         if (p(m)) {ub = m;}
